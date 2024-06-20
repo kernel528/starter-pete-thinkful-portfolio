@@ -1,78 +1,143 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+/* Reset stuff
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
 body {
-  background-color: #eae2b7;
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+    background-color: #eae2b7;
+    color: #003049;
+    font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
 }
 
 /* Headings */
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
+    font-family: "Playfair Display", Times, serif;
+    text-align: center;
 }
 
 /* Header */
 header {
-  text-align: center;
+    text-align: center;
 }
 
 /* Containers */
 div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+    background-color: #eae2b7;
+    margin: auto;
+    width: 600px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 article {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 article div {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 /* Paragraphs */
 p {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 
 /* Links */
 a:link {
-  color: #d62828;
+    color: #d62828;
 }
 
 a:hover {
-  color: #f77f00;
+    color: #f77f00;
 }
 
 nav a {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 /* Images */
 img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
-}
-
-/* Footer */
-footer {
-  text-align: center;
+    border: 2px solid #003049;
+    border-radius: 50%;
 }
 
 /* Other page elements */
 hr {
-  border: 1px solid black;
+    border: 1px solid black;
+}
+
+/* About section styles */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Attempt to customize about section image
+.about-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+*/
+
+/* Attempt to modify about section text only
+.about-text {
+  flex: 1;
+}
+*/
+
+.image-circle {
+    border-radius: 50%;
+    max-width: 175px; /* Adjust as necessary */
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-paragraph {
+    text-align: left;
+}
+
+/* Portfolio section styles */
+.portfolio-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.project p {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
 }
